@@ -183,8 +183,7 @@ public class Osoba {
         return;
         //Pro průchod celým seznamem se použije for each cyklus (s dvojtečkou) – po zadání "deti.for" IntelliJ Ieda napoví.
         //Pozor, nejde o metodu forEach()!
-        deti.forEach(System.out::println);
-        return;
+
 
     }
     //endregion
