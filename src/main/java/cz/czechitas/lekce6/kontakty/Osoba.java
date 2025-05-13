@@ -76,6 +76,8 @@ public class Osoba {
      */
     private void pridejEmail(String email) {
         //TODO
+        emaily.add(email);
+        return;
     }
 
     /**
@@ -85,8 +87,10 @@ public class Osoba {
      * @return
      */
     private boolean obsahujeEmail(String email) {
+
         //TODO
-        return false;
+        emaily.contains(email);
+        return emaily.contains(email);
     }
 
     /**
@@ -96,6 +100,8 @@ public class Osoba {
      */
     private void pridejTelefon(String telefon) {
         //TODO
+        telefony.add(telefon);
+        return;
     }
 
     /**
@@ -105,6 +111,8 @@ public class Osoba {
      */
     private void odstranTelefon(String telefon) {
         //TODO
+        telefony.remove(telefon);
+        return;
     }
 
     /**
@@ -112,6 +120,7 @@ public class Osoba {
      */
     private boolean jeSeznamTelefonuPrazdny() {
         //TODO
+        telefony.isEmpty();
         return false;
     }
 
@@ -120,6 +129,8 @@ public class Osoba {
      */
     private void smazVsechnyTelefony() {
         //TODO
+        telefony.clear();
+        return;
     }
 
     /**
@@ -129,6 +140,8 @@ public class Osoba {
      */
     private void pridejDite(String jmeno) {
         //TODO
+        deti.add(jmeno);
+        return;
     }
 
     /**
@@ -139,6 +152,7 @@ public class Osoba {
      */
     private boolean jeNaSeznamuDite(String jmeno) {
         //TODO
+        deti.contains(jmeno);
         return false;
     }
 
@@ -152,6 +166,7 @@ public class Osoba {
      */
     private Integer kolikateJe(String jmeno) {
         //TODO
+        deti.indexOf(jmeno);
         return 0;
     }
 
@@ -163,8 +178,14 @@ public class Osoba {
     private void vypisDeti() {
         //TODO bonusový úkol
         //Pro výpis jednoho dítěte se použije System.out.println()
+        deti.get(deti.size() - 1).toString();
+        System.out.println(deti);
+        return;
         //Pro průchod celým seznamem se použije for each cyklus (s dvojtečkou) – po zadání "deti.for" IntelliJ Ieda napoví.
         //Pozor, nejde o metodu forEach()!
+        deti.forEach(System.out::println);
+        return;
+
     }
     //endregion
 
